@@ -36,7 +36,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"])& ~filters.edited)
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by KSHITIJ")
+    editable = await m.reply_text("Hello😉 im txt file downloader📥\nPress /download links listed in a txt file in the format **Name:link**\n\nBot made by KSHITIJ😎")
 
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
@@ -92,7 +92,7 @@ async def account_login(bot: Client, m: Message):
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
 
-    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/file/d9e24878bd4aba05049a1.jpg```\n\nor Send **no**")
+    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```Please save image ```\n\nor Send **no**")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
 
@@ -401,7 +401,7 @@ async def account_login(bot: Client, m: Message):
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
 
-    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/file/d9e24878bd4aba05049a1.jpg```\n\nor Send **no**")
+    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/file/d9.jpg```\n\nor Send **no**")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
 
