@@ -30,7 +30,7 @@ async def progress_bar(current,total,reply,start):
             tot=hrb(total)
             cur=hrb(current)
             try:
-                await reply.edit (f'`pct = float(pct.split('%')[0])
+                await reply.edit (pct = float(pct.split('%')[0])
     p = min(max(pct, 0), 100)
     cFull = int(p // 8)
     p_str = '■' * cFull
