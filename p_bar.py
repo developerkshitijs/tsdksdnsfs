@@ -30,14 +30,14 @@ async def progress_bar(current,total,reply,start):
             tot=hrb(total)
             cur=hrb(current)
             try:
-                await get_progress_bar_string(pct):
-    pct = float(pct.split('%')[0])
+                await reply.edit (f'`pct = float(pct.split('%')[0])
     p = min(max(pct, 0), 100)
     cFull = int(p // 8)
     p_str = '■' * cFull
     p_str += '□' * (12 - cFull)
     return f"[{p_str}]"
 
-               
+   
+              
             except FloodWait as e:
                 time.sleep(e.x)
