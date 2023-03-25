@@ -30,7 +30,14 @@ async def progress_bar(current,total,reply,start):
             tot=hrb(total)
             cur=hrb(current)
             try:
-                await reply.edit(f'`┌ 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨 📥 -【 {perc} 】\n├ 𝙎𝙥𝙚𝙚𝙙 🚦 -【 {sp} 】\n└ 𝙎𝙞𝙯𝙚 🗂 -【 {cur} / {tot} 】`')
+                await get_progress_bar_string(pct):
+    pct = float(pct.split('%')[0])
+    p = min(max(pct, 0), 100)
+    cFull = int(p // 8)
+    p_str = '■' * cFull
+    p_str += '□' * (12 - cFull)
+    return f"[{p_str}]"
+
                
             except FloodWait as e:
                 time.sleep(e.x)
